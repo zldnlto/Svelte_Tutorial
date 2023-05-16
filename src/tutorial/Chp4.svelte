@@ -2,6 +2,8 @@
 	export let name = 'universe';
 	export let a = 2;
 	export let b = 0;
+
+    let colors = ["빨강","노랑","파랑","보라"];
 </script>
 
 <main>
@@ -18,6 +20,26 @@
 	{:else}
 	<p>{b}은(는) 음수입니다</p>
 	{/if}
+
+    <!-- each 루프문  -->
+    <ul>
+        {#each colors as color}
+        <li>{color}</li>
+        {/each}
+    </ul>
+    <!-- each 루프문 안에서 index 사용하기 -->
+    <ul>
+        {#each colors as color, idx}
+        <li>{idx + 1} : {color}</li>
+        {/each}
+    </ul>
+    <!-- select로 응용하기  -->
+    <select name="" id="">
+        <option value="">선택하세요</option>
+        {#each colors as color, idx}
+        <option> {idx + 1}: {color}</option>
+        {/each}
+    </select>
 </main>
 
 <style>
