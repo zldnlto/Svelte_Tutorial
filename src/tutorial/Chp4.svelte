@@ -49,6 +49,8 @@
     {#each Object.entries(emailCard) as [key,value], idx}
     <p>{idx}번째 키: {key}의 값은 {value}</p>
     {/each}
+
+
 </main>
 
 <style>
