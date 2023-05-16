@@ -1,12 +1,9 @@
 <script>
-	let name = 'universe';
-	let a = 2;
+	import Chp4 from './tutorial/Chp4.svelte'
 </script>
 
 <main>
-	{#if a>0}
-	<h1>Hello {name}!</h1>
-	{/if}
+	<Chp4 name="world" a={3} b={-1}/>
 </main>
 
 <style>
