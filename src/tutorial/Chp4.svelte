@@ -4,6 +4,10 @@
 	export let b = 0;
 
     let colors = ["빨강","노랑","파랑","보라"];
+
+    let emailCard = {_id: "a1", name:"둘리", email:"d2@mail.com", age:10}
+
+    console.log(Object.entries(emailCard))
 </script>
 
 <main>
@@ -40,6 +44,11 @@
         <option> {idx + 1}: {color}</option>
         {/each}
     </select>
+
+    <!-- JSON 객체 다루기 - JSON을 배열 형태로 만든 후 사용 -->
+    {#each Object.entries(emailCard) as [key,value], idx}
+    <p>{idx}번째 키: {key}의 값은 {value}</p>
+    {/each}
 </main>
 
 <style>
