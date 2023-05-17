@@ -8,4 +8,4 @@
   //   상위 컴포넌트로부터 값을 주입받기 위해 설정
 </script>
 
-<p>hello {name}</p>
+<p>hello {name}!</p>

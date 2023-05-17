@@ -13,7 +13,13 @@
   <Chp4_2Promise />
   <!-- <Chp4_3Fetch/> -->
   <Chp4_4Key />
-  <Chp4_5KeyLifecycle />
+
+  <input type="text" bind:value="{name}" />
+  {#key name}
+    <Chp4_5KeyLifecycle name="{name}" />
+  {/key}
+
+  <Chp4_5KeyLifecycle name="{name}" />
 </main>
 
 <style>
