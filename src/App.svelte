@@ -4,6 +4,7 @@
   import Chp4_3Fetch from './tutorial/Chp4_3_fetch.svelte';
   import Chp4_4Key from './tutorial/Chp4_4_key.svelte';
   import Chp4_5KeyLifecycle from './tutorial/Chp4_5_key_lifecycle.svelte';
+  import Chp4_6Html from './tutorial/Chp4_6_html.svelte';
 
   let name = '얄루';
 </script>
@@ -20,6 +21,7 @@
   {/key}
 
   <Chp4_5KeyLifecycle name="{name}" />
+  <Chp4_6Html />
 </main>
 
 <style>
