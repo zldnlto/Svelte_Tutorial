@@ -26,9 +26,24 @@ function addCount(){
     count = count +1; //트리거
 }
 
+let colors = ['빨강', '주황', '노랑', '초록'];
+
+$: console.log("log.1: ", colors);
+
+function assignment(){
+    colors.pop();
+    colors = colors;
+    console.log("log.2", colors);
+}
+
 
 </script>
 
 <main>
     <button on:click={addCount}>카운트는 {count} 입니다</button>
+
+    <h2>배열은 요소가 할당되면 명시적으로 할당하는 코드가 필요하다</h2>
+    <p>colors = colors; 를 꼭 써줘야함</p>
+    <p>{colors.join(",")} 모두 {colors.length} 개의 색이 있습니다.</p>
+    <button on:click={assignment}>할당</button>
 </main>
