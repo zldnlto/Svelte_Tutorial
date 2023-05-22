@@ -8,6 +8,7 @@
   import Chp5 from './tutorial/Chp5.svelte';
   import Chp5Json from './tutorial/Chp5_JSON.svelte';
   import Chp5Sensor from './tutorial/Chp5_sensor.svelte';
+  import Chp6 from './tutorial/Chp6.svelte';
 
   let name = '얄루';
 </script>
@@ -27,6 +28,7 @@
   <Chp4_6Html />
   <Chp5Sensor />
   <Chp5Json />
+  <Chp6 />
 </main>
 
 <style>
