@@ -1,7 +1,8 @@
 <script>
     let name = 'world';
-
     let size = 30;
+    let editable = false;
+    let favorite = '조슈아';
 </script>
 
 <main>
@@ -15,5 +16,12 @@
     <input type="number" bind:value={size}>
 
     <h1 style="font-size:{size}px">폰트 사이즈 조정해봐용 {name}</h1>
+
+    <input type="checkbox" bind:checked={editable}> 수정 체크
+    {#if editable}
+    <p>수정 모드 : <input type="text" bind:value={favorite}></p>
+    {:else}
+    <p>보기 모드 : {favorite}</p>
+    {/if}
 </main>
 
