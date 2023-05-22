@@ -6,6 +6,7 @@
   import Chp4_5KeyLifecycle from './tutorial/Chp4_5_key_lifecycle.svelte';
   import Chp4_6Html from './tutorial/Chp4_6_html.svelte';
   import Chp5 from './tutorial/Chp5.svelte';
+  import Chp5Json from './tutorial/Chp5_JSON.svelte';
   import Chp5Sensor from './tutorial/Chp5_sensor.svelte';
 
   let name = '얄루';
@@ -25,6 +26,7 @@
   <Chp4_5KeyLifecycle name="{name}" />
   <Chp4_6Html />
   <Chp5Sensor />
+  <Chp5Json />
 </main>
 
 <style>
