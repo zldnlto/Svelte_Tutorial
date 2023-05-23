@@ -9,7 +9,9 @@
   import Chp5Json from './tutorial/Chp5_JSON.svelte';
   import Chp5Sensor from './tutorial/Chp5_sensor.svelte';
   import Chp6 from './tutorial/Chp6.svelte';
+  import Chp6Contenteditable from './tutorial/Chp6_contenteditable.svelte';
   import Chp6Select from './tutorial/Chp6_select.svelte';
+  import Chp6SelectExample from './tutorial/Chp6_select_example.svelte';
 
   let name = '얄루';
 </script>
@@ -30,7 +32,8 @@
   <Chp5Sensor />
   <Chp5Json />
   <Chp6 />
-  <Chp6Select/>
+  <Chp6SelectExample/>
+  <Chp6Contenteditable />
 </main>
 
 <style>
