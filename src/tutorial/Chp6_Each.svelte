@@ -21,12 +21,19 @@
     <tbody>
         {#each customers as cust}
             <tr>
+                
                 <td>{cust.disable}</td>
-                <td>{cust.email}</td>
-                <td>{cust.mailType}</td>
-                <td>{cust.name}</td>
-                <td>{cust.age}</td>
-                <td>{cust.grade}</td>
+                <td><input type="text" bind:value={cust.email} disabled={cust.disable}></td>
+                <td> [ 집: <input type="radio" bind:group={cust.mailType} value="home" disabled={cust.disable}> | 회사: <input type="radio" bind:group={cust.mailType} value="office" disabled={cust.disable}> ]</td>
+                <td><input type="text" bind:value={cust.name} disabled={cust.disable}></td>
+                <td><input type="number" bind:value={cust.age} disabled={cust.disable}></td>
+                <td>
+                    <select bind:value={cust.grade} >
+                        <option value="gold">골드</option>
+                        <option value="silver">실버</option>
+                        <option value="normal">일반</option>
+                    </select>
+                </td>
             </tr>
         {/each}
     </tbody>
