@@ -14,6 +14,7 @@
   import Chp6Select from './tutorial/Chp6_select.svelte';
   import Chp6SelectExample from './tutorial/Chp6_select_example.svelte';
   import Chp6Size from './tutorial/Chp6_size.svelte';
+  import Chp6This from './tutorial/Chp6_this.svelte';
 
   let name = '얄루';
 </script>
@@ -38,6 +39,7 @@
   <Chp6Contenteditable />
   <Chp6Each />
   <Chp6Size />
+  <Chp6This />
 </main>
 
 <style>
