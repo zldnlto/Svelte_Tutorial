@@ -16,6 +16,7 @@
     onDestroy(unsubscribe);
 
     //4. 스토어 값 변경하기 (rangeValue값 변경 시 count도 업데이트하기)
+    $:count.set(rangeValue);
 </script>
 
 
