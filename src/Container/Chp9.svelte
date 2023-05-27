@@ -1,23 +1,17 @@
 <script>
-    let count = 0;
-    const search = (event) => {
-        console.log("조회 버튼 클릭")
-        console.log(event.target)
-        count = count +1;
-    }
+  import EventTutorial from "../Chp9/EventTutorial.svelte";
+  import SearchButton from "../Chp9/SearchButton.svelte";
+
+let searchText = '';
+const customSearch = (event)=> {
+    searchText = event.detail.text;
+}
+
 </script>
-<button on:click={search}>
-Search ({count})
-</button>
 
-<button  on:click={(event)=> {
-    console.log(event.target);
-    count = count +1;
-}}>Button Inline ({count})</button>
 
-<!-- 이벤트 제한자 사용하기  -->
-<button on:click|once|preventDefault={search}>Search Once ({count})</button>
+<EventTutorial />
 
-<div>
-    제한자 종류 : preventDefault, stopPropagation, passive, nonpassive, capture, once, self
-</div>
+<SearchButton on:searchClicked={customSearch}/>
+<br>
+{searchText==""?"검색어를 입력 후 Search 버튼을 클릭하세요":"검색어: " + searchText }
