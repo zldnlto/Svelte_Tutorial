@@ -1,4 +1,6 @@
 <script>
+  import { onDestroy } from 'svelte';
+
     let rangeValue = 50;
 
     // 1. store에서 count 임포트 
@@ -11,6 +13,7 @@
     })
 
     //3. 구독 종료하기
+    onDestroy(unsubscribe);
 
     //4. 스토어 값 변경하기 (rangeValue값 변경 시 count도 업데이트하기)
 </script>
