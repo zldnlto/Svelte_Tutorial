@@ -1,5 +1,6 @@
 <script>
   import AutoSubscribe from "../Chp11/AutoSubscribe.svelte";
+  import ReadableStore from "../Chp11/ReadableStore.svelte";
 import WritebleStore from "../Chp11/WritebleStore.svelte";
 
 
@@ -9,3 +10,4 @@ import WritebleStore from "../Chp11/WritebleStore.svelte";
 <h1>Chp11. 스토어</h1>
 <WritebleStore />
 <AutoSubscribe />
+<ReadableStore />
