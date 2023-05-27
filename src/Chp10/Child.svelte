@@ -12,10 +12,23 @@
         }
     })
 
+    beforeUpdate (()=> {
+        console.log("Child beforeUpdate 호출됨")
+    })
+
+    afterUpdate (()=> {
+        console.log("Child afterUpdate 호출됨")
+    })
+
     onDestroy(()=> {
         console.log("Child onDestroy 호출됨")
     })
+
+    let x = 0;
+
 </script>
 
 <h1>Child</h1>
-<input type="text" id="text01">
+<input type="text" id="text01" bind:value={x}>
+<p></p>
+<button on:click={()=> x += 1}>add</button>
