@@ -5,16 +5,15 @@
         console.log(event.target)
         count = count +1;
     }
-
-    const increase = () => {
-        console.log("increase");
-        count = count +1;
-    }
 </script>
-
-<button on:click={search} on:click={increase}>
+<button on:click={search}>
 Search ({count})
 </button>
+
+<button  on:click={(event)=> {
+    console.log(event.target);
+    count = count +1;
+}}>Button Inline ({count})</button>
 
 <style>
 
