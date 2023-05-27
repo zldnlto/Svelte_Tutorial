@@ -15,6 +15,9 @@ Search ({count})
     count = count +1;
 }}>Button Inline ({count})</button>
 
-<style>
+<!-- 이벤트 제한자 사용하기  -->
+<button on:click|once|preventDefault={search}>Search Once ({count})</button>
 
-</style>
+<div>
+    제한자 종류 : preventDefault, stopPropagation, passive, nonpassive, capture, once, self
+</div>
