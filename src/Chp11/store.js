@@ -15,3 +15,17 @@ export const time = readable(new Date(), function start(set) {
     clearInterval(interval);
   };
 });
+
+// 무기명함수로 작성 가능
+
+export const time2 = readable(new Date(), (set) => {
+  console.log('구독이 시작되었습니다');
+  const interval = setInterval(() => {
+    set(new Date());
+  }, 1000);
+
+  return () => {
+    console.log('모든 구독이 종료되었습니다');
+    clearInterval(interval);
+  };
+});
