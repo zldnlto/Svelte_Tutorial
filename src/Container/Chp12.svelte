@@ -1,7 +1,7 @@
 <script>
-  import Duration from "../Chp12/01_Duration.svelte";
+  import Tweened from "../Chp12/01_Tweened.svelte";
 
 
 </script>
 
-<Duration />
+<Tweened />
