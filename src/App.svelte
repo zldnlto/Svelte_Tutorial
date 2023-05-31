@@ -6,6 +6,7 @@
   import Chp11 from "./Container/Chp11.svelte";
   import Chp12 from "./Container/Chp12.svelte";
   import Chp13 from "./Container/Chp13.svelte";
+  import Chp14 from "./Container/Chp14.svelte";
   
   let name = '얄루';
 </script>
@@ -17,7 +18,8 @@
   <!-- <Chp10 /> -->
   <!-- <Chp11 /> -->
   <!-- <Chp12 /> -->
-  <Chp13 />
+  <!-- <Chp13 /> -->
+  <Chp14 />
 </main>
 
 <style>
